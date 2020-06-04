@@ -47,3 +47,5 @@ In particular adapt in master.tex and config.tex all parts which are marked with
 Lists of figures, tables, coding sections, algorithms will be generated automaticvally during LaTeX compilation if these items are properly captioned -- see LaTeX instructions for details. Acronyms will be maintained in file **`acronyms.tex`**. The acronyms list will then also be generated automatically upon compilation with LaTeX.
 
 The package contains sample chater and appendix files which may be adapted and extended. Additional chapter and appendix files need to be included in the `master.tex` file.
+
+If nexessarx, replace the graphics file **`firmenlogo.jpg`** in folder `./img` by the logo of your company. Adjust the size in your thesis by adjusting the scale of the image of the logo in **`titlepage.tex`**.
