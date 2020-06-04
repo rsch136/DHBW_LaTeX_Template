@@ -5,7 +5,6 @@
 * __Always use the latest version of this template!__
 * The template is written for a thesis in German, but can be adapted easily to other languages.
 * **Using this template requires basic knowledge of LaTeX! Please get used to it *before* you start writing!**
-* 
 * [Here](hinweise-wissenschaftliche-arbeiten.md) are some general remarks (in German) on how to write scientific your thesises.
 
 
@@ -33,13 +32,18 @@ The template itself is pure LaTeX with only four template-specific commands whic
 
 The template files are commented quite well and it also includes an instruction chapter which explains the basic usage of the template (actually, the instruction chapter is in German).
 
-Citation examples are included in the `bibliography.bib`-File (Article, Book, Online Reference).
+Citation examples are included in the **`bibliography.bib`** file (articles, books, online references, etc.).
 
 **Important:** Instead of BibTeX, the template uses the newer BibLaTeX/Biber combination. Please adjust your LaTeX environment accordingly when you get strange errors referring to the bibliography, since most editors default to BibTeX.
 
 ## Explanation of the template
 The file **`master.tex`** is the TeX root file which can be compiled directly. All other `.tex`-Files are incuded from here. Read the comments in the file carefully, since you'll likely need some modifications here (e.g. for disabling unused stuff like the *List of Algorithms* etc.).
 
-The file `config.tex` includes relevant packages and does some configuration stuff. Nearly every property or characteristic can be configured/modified here, beginning from page layout, header and footer, citaion style etc.). *Please also read the comments in the file catefully and - if needed - read the package documentations at [CTAN](http://www.ctan.org)!*
+The file **`config.tex`** includes relevant packages and does some configuration stuff. Nearly every property or characteristic can be configured/modified here, beginning from page layout, header and footer, citaion style etc.). *Please also read the comments in the file catefully and - if needed - read the package documentations at [CTAN](http://www.ctan.org)!*
 
-In particular adapt in master.tex and config.tex all parts which are marked with @stud.
+In particular adapt in master.tex and config.tex all parts which are marked with 
+`@stud`.
+
+Lists of figures, tables, coding sections, algorithms will be generated automaticvally during LaTeX compilation if these items are properly captioned -- see LaTeX instructions for details. Acronyms will be maintained in file **`acronyms.tex`**. The acronyms list will then also be generated automatically upon compilation with LaTeX.
+
+The package contains sample chater and appendix files which may be adapted and extended. Additional chapter and appendix files need to be included in the `master.tex` file.
