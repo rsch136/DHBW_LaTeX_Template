@@ -4,7 +4,7 @@ Dieses Dokument enthält Hinweise für die Erstellung wissenschaftlicher Arbeite
 
 In Projekt-, Bachelor- und Masterarbeiten setzen sich Studierende mit einer vorgegebenen fachlichen Fragestellung in entsprechender Tiefe und gemäß wissenschaftlicher Kriterien auseinander. Die Beantwortung der Fragestellung erfolgt im Rahmen einer schriftlichen Arbeit. 
 
-In den Arbeiten werden eigene Forschungen betrieben sowie eigene Ideen, Konzepte und Lösungen bereit gestellt, mit deren Hilfe letztendlich die Forschungsfrage beantwortet werden kann. 
+In den Arbeiten werden eigene Forschungen betrieben sowie eigene Ideen, Konzepte und Lösungen bereitgestellt, mit deren Hilfe letztendlich die Forschungsfrage beantwortet werden kann. 
 
 Eine mit wissenschaftlichen Kriterien durchgeführte Untersuchung, die zeigt, dass die Forschungsfrage nicht oder nicht in dem vorgegebenen Kontext beantwortet werden kann, ist auch ein mögliches Ergebnis des wissenschaftlichen Arbeitens.
 
@@ -186,7 +186,7 @@ Prinzipiell setzt sich die Gesamtnote für die schriftliche Abschlussarbeit aus 
   - Beschreibung des erwarteten Ziels und Beitrags der Arbeit
   - Beschreibung der Grundlagen ("Theorieteil")
   - Beschreibung der Forschung ("Praxisteil")
-  - Angabe der grunglegenden Literatur 
+  - Angabe der grundlegenden Literatur 
 
 ### Gliederung und Inhalte der wissenschaftlichen Arbeit
 
@@ -256,7 +256,7 @@ Gemäß der inhaltlichen und formalen Vorgaben der im Studiengang ausgehändigte
   - Qualität und richtige Auswahl sind entscheidend
   - Literaturverzeichnis spiegelt die tatsächlich in der Arbeit verwendete Literatur wider, nicht mehr und nicht weniger 
   - keine Literatur oder Verweise verwenden, auf die der Leser nicht zugreifen kann 
-    - Bspwse. Diskussionen, Gespräche, interne Dokumente ohne Zugriffsmöglichkeit
+    - beispielsweise Diskussionen, Gespräche, interne Dokumente ohne Zugriffsmöglichkeit
 
 - Korrekte Widerspiegelung der im Literaturverzeichnis ausgewiesenen Literatur im Text der Arbeit
   
