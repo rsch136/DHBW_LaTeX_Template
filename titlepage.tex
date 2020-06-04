@@ -1,40 +1,33 @@
+% !TEX root =  master.tex
 \begin{titlepage}
 \begin{minipage}{\textwidth}
 		\vspace{-2cm}
-		\noindent \includegraphics[scale=0.71]{img/firmenlogo.jpg} \hfill   \includegraphics{img/logo.jpg}
+		\noindent \includegraphics[scale=0.71]{\imagedir/firmenlogo.jpg} \hfill \includegraphics{\imagedir/logo.jpg}
 \end{minipage}
 \vspace{1em}
-\sffamily
+%\sffamily
 \begin{center}
-	\textsf{\large{}Duale Hochschule Baden-W\"urttemberg\\[1.5mm] Mannheim}\\[2em]
-	\textsf{\textbf{\Large{}Bachelorarbeit}}\\[3mm]
-	\textsf{\textbf{\DerTitelDerArbeit}} \\[1.5cm]
-	\textsf{\textbf{\Large{}Studiengang Wirtschaftsinformatik}\\[3mm] \textsf{Studienrichtung Software Engineering}}
+	{\textsf{\large Duale Hochschule Baden-W\"urttemberg Mannheim}}\\[4em]
+	{\textsf{\textbf{\large{\DieArtDerArbeit}arbeit}}}\\[6mm]
+	{\textsf{\textbf{\Large{}\DerTitelDerArbeit}}} \\[1.5cm]
+	{\textsf{\textbf{\large{}Studiengang Wirtschaftsinformatik}}\\[6mm]
+	\textsf{\textbf{Studienrichtung \DieStudienrichtung}}}\vspace{10em}
 	
-	\vspace{3em}
-	\textsf{\Large{Sperrvermerk}}
-\vfill
-
-\begin{minipage}{\textwidth}
-
-\begin{tabbing}
-	Wissenschaftlicher Betreuer: \hspace{0.85cm}\=\kill
-	Verfasser/in: \> \DerAutorDerArbeit \\[1.5mm]
-	Matrikelnummer: \> 123456 \\[1.5mm]
-	Firma: \> \DerNameDerFirma  \\[1.5mm]
-	Abteilung: \> Softwareentwicklung \\[1.5mm]
-	Kurs: \> \DieKursbezeichnung \\[1.5mm]
-	Studiengangsleiter: \> Prof. Dr. Julian Reichwald  \\[1.5mm]
-	Wissenschaftlicher Betreuer: \> Dr. Max Mustermann \\
-	\> test@test.com \\
-	\> +49 151 / 123 456 \\[1.5mm]
-	Firmenbetreuer: \> Moritz Testname \\
-	\> test@test.com \\
-	\> +49 151 / 123 456 \\[1.5mm]
-	Bearbeitungszeitraum: \> 01.01.1970 -- 31.12.2099
-\end{tabbing}
-\end{minipage}
-
+	\begin{minipage}{\textwidth}
+		\begin{tabbing}
+		Wissenschaftliche(r) Betreuer(in): \hspace{0.85cm}\=\kill
+		Verfasser(in): \> \DerAutorDerArbeit \\[1.5mm]
+		Matrikelnummer: \> \DieMatrikelnummer \\[1.5mm]
+		Firma: \> \DerNameDerFirma  \\[1.5mm]
+		Abteilung: \> \DerNameDerAbteilung \\[1.5mm]
+		Kurs: \> \DieKursbezeichnung \\[1.5mm]
+		Studiengangsleiter: \> \DerStudiengangsleiter \\[1.5mm]
+		Wissenschaftliche(r) Betreuer(in): \> \DerWissBetreuer \\[1.5mm]
+		Firmenbetreuer(in): \> \DerFirmenBetreuer \\[1.5mm]
+		Bearbeitungszeitraum: \> \DerBearbeitungszeitraum\\[1.5mm]
+%		alternativ:\\[1.5mm]
+%		Eingereicht: \> \DasAbgabedatum	
+		\end{tabbing}
+	\end{minipage}
 \end{center}
-
 \end{titlepage}

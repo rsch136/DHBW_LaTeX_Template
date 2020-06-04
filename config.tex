@@ -1,96 +1,62 @@
 % !TEX root =  master.tex
-
-%		LANGUAGE SETTINGS AND FONT ENCODING 
-%
-\usepackage[ngerman]{babel} 	% German language
-\usepackage[utf8]{inputenc}
-\usepackage[german=quotes]{csquotes} 	% correct quotes using \enquote{}
-\usepackage[T1]{fontenc}
-
-
-%\usepackage[english]{babel}   % For english language
-%\usepackage{csquotes} 	% Richtiges Setzen der Anführungszeichen mit \enquote{}
-
 % 		HYPERREF
 %
-\usepackage[
-	hidelinks=true % keine roten Markierungen bei Links
-]{hyperref}
-
-% Zwei eigene Befehle zum Setzen von Autor und Titel. Ausserdem werden die PDF-Informationen richtig gesetzt.
-\newcommand{\TitelDerArbeit}[1]{\def\DerTitelDerArbeit{#1}\hypersetup{pdftitle={#1}}}
-\newcommand{\AutorDerArbeit}[1]{\def\DerAutorDerArbeit{#1}\hypersetup{pdfauthor={#1}}}
-\newcommand{\Firma}[1]{\def\DerNameDerFirma{#1}}
-\newcommand{\Kurs}[1]{\def\DieKursbezeichnung{#1}}
-
-
-% Correct superscripts 
-\usepackage{fnpct}
-
-
-
-
-%		CALCULATIONS
-%
+\usepackage{makeidx}         % allows index generation
+\usepackage{listings}	%Format Listings properly
+\usepackage{lipsum}    %Blindtext
+\usepackage{graphicx} % use various graphics formats
+\usepackage[german]{varioref} 	% nicer references \vref
+\usepackage{caption}	%better Captions
+\usepackage{booktabs} %nicer Tabs
+\usepackage{array}
+\usepackage{chngcntr}
+\usepackage[hidelinks=true]{hyperref} % keine roten Markierungen bei Links
+\usepackage{fnpct} % Correct superscripts 
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage{calc} % Used for extra space below footsepline
+\usepackage{acronym}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 
-
-
-%		BIBLIOGRAPHY SETTINGS
 %
+% @stud
+%
+%	FONT SELECTION: Entweder 1) Latin Modern oder 2) Times / Helvetica
+\usepackage{lmodern}             % 1) Latin modern font
+%\usepackage{mathptmx}           % 2) Helvetica / Times New Roman fonts (2 lines)
+%\usepackage[scaled=.92]{helvet} % 2) Helvetica / Times New Roman fonts (2 lines)
 
-% Uncomment the next three lines for author-year-style with footnotes (Chicago)
-\usepackage[backend=biber, autocite=footnote, style=authoryear, dashed=false]{biblatex} 	%Use Author-Year-Cites with footnotes
-\AdaptNoteOpt\footcite\multfootcite   %will add  separators if footcite is called multiple consecutive times 
-\AdaptNoteOpt\autocite\multautocite % will add  separators if autocite is called multiple consecutive times
+%
+% @stud
+%
+%	LANGUAGE SETTINGS
+\usepackage[ngerman]{babel} 	        % german language
+\usepackage[german=quotes]{csquotes} 	% correct quoting using \enquote{}
+%\usepackage[english]{babel}          % english language
+%\usepackage{csquotes} 	              % correct quoting using \enquote{}
 
-% Uncomment the next line for IEEE-style 
-% \usepackage[backend=biber, autocite=inline, style=ieee]{biblatex} 	% Use IEEE-Style (e.g. [1])
-
-% Uncomment the next line for alphabetic style 
-% \usepackage[backend=biber, autocite=inline, style=alphabetic]{biblatex} 	% Use alphabetic style (e.g. [TGK12])
-
-% Uncomment the next two lines vor Harvard-Style 
-%\usepackage[backend=biber, style=apa]{biblatex} 	
-%\DeclareLanguageMapping{german}{german-apa}
-
-
-\DefineBibliographyStrings{ngerman}{  %Change u.a. to et al. (german only!)
-	andothers = {{et\,al\adddot}},
-}
-
-%%% Uncomment the following lines to support hard URL breaks in bibliography 
+%
+% @stud
+%
+% Uncomment the following lines to support hard URL breaks in bibliography 
 %\apptocmd{\UrlBreaks}{\do\f\do\m}{}{}
 %\setcounter{biburllcpenalty}{9000}% Kleinbuchstaben
 %\setcounter{biburlucpenalty}{9000}% Großbuchstaben
 
-
-\setlength{\bibparsep}{\parskip}		%add some space between biblatex entries in the bibliography
-\addbibresource{bibliography.bib}	%Add file bibliography.bib as biblatex resource
-
-
-%		FOOTNOTES 
 %
-% Count footnotes over chapters
-\usepackage{chngcntr}
-\counterwithout{footnote}{chapter}
+% @stud
+%
+%	FOOTNOTES: Count footnotes over chapters
+%1 \counterwithout{footnote}{chapter}
 
 %	ACRONYMS
-%%%
-%%% WICHTIG: Installieren Sie das neueste Acronyms-Paket!!!
-%%%
 \makeatletter
-\usepackage[printonlyused]{acronym}
 \@ifpackagelater{acronym}{2015/03/20}
-  {%
-    \renewcommand*{\aclabelfont}[1]{\textbf{\textsf{\acsfont{#1}}}}
-  }%
-  {%
-  }%
+{\renewcommand*{\aclabelfont}[1]{\textbf{{\acsfont{#1}}}}}{}
 \makeatother
 
-%		LISTINGS
-\usepackage{listings}	%Format Listings properly
+%	LISTINGS
 \renewcommand{\lstlistingname}{Quelltext} 
 \renewcommand{\lstlistlistingname}{Quelltextverzeichnis}
 \lstset{numbers=left,
@@ -98,41 +64,84 @@
 	captionpos=b,
 	basicstyle=\ttfamily\small}
 
-
-%		EXTRA PACKAGES
-\usepackage{lipsum}    %Blindtext
-\usepackage{graphicx} % use various graphics formats
-\usepackage[german]{varioref} 	% nicer references \vref
-\usepackage{caption}	%better Captions
-\usepackage{booktabs} %nicer Tabs
-\usepackage{array}
-%\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
-
-
-%		ALGORITHMS
-\usepackage{algorithm}
-\usepackage{algpseudocode}
+%	ALGORITHMS
 \renewcommand{\listalgorithmname}{Algorithmenverzeichnis }
 \floatname{algorithm}{Algorithmus}
-
-
-%		FONT SELECTION: Entweder Latin Modern oder Times / Helvetica
-\usepackage{lmodern} %Latin modern font
-%\usepackage{mathptmx}  %Helvetica / Times New Roman fonts (2 lines)
-%\usepackage[scaled=.92]{helvet} %Helvetica / Times New Roman fonts (2 lines)
 
 %		PAGE HEADER / FOOTER
 %	    Warning: There are some redefinitions throughout the master.tex-file!  DON'T CHANGE THESE REDEFINITIONS!
 \RequirePackage[automark,headsepline,footsepline]{scrpage2}
 \pagestyle{scrheadings}
-\renewcommand*{\pnumfont}{\upshape\sffamily}
-\renewcommand*{\headfont}{\upshape\sffamily}
-\renewcommand*{\footfont}{\upshape\sffamily}
+%\renewcommand*{\pnumfont}{\upshape\sffamily}
+%\renewcommand*{\headfont}{\upshape\sffamily}
+%\renewcommand*{\footfont}{\upshape\sffamily}
 \renewcommand{\chaptermarkformat}{}
 \RedeclareSectionCommand[beforeskip=0pt]{chapter}
 \clearscrheadfoot
 
 \ifoot[\rule{0pt}{\ht\strutbox+\dp\strutbox}DHBW Mannheim]{\rule{0pt}{\ht\strutbox+\dp\strutbox}DHBW Mannheim}
 \ofoot[\rule{0pt}{\ht\strutbox+\dp\strutbox}\pagemark]{\rule{0pt}{\ht\strutbox+\dp\strutbox}\pagemark}
-
 \ohead{\headmark}
+
+\newcommand{\TitelDerArbeit}[1]{\def\DerTitelDerArbeit{#1}\hypersetup{pdftitle={#1}}}
+\newcommand{\AutorDerArbeit}[1]{\def\DerAutorDerArbeit{#1}\hypersetup{pdfauthor={#1}}}
+\newcommand{\Firma}[1]{\def\DerNameDerFirma{#1}}
+\newcommand{\Kurs}[1]{\def\DieKursbezeichnung{#1}}
+\newcommand{\Abteilung}[1]{\def\DerNameDerAbteilung{#1}}
+\newcommand{\Studiengangsleiter}[1]{\def\DerStudiengangsleiter{#1}}
+\newcommand{\WissBetreuer}[1]{\def\DerWissBetreuer{#1}}
+\newcommand{\FirmenBetreuer}[1]{\def\DerFirmenBetreuer{#1}}
+\newcommand{\Bearbeitungszeitraum}[1]{\def\DerBearbeitungszeitraum{#1}}
+\newcommand{\Abgabedatum}[1]{\def\DasAbgabedatum{#1}}
+\newcommand{\Matrikelnummer}[1]{\def\DieMatrikelnummer{#1}}
+\newcommand{\Studienrichtung}[1]{\def\DieStudienrichtung{#1}}
+\newcommand{\ArtDerArbeit}[1]{\def\DieArtDerArbeit{#1}}
+\newcommand{\Literaturverzeichnis}{Literaturverzeichnis}
+
+\newcommand{\settingBibFootnoteCite}{
+	\setlength{\bibparsep}{\parskip}		  % Add some space between biblatex entries in the bibliography
+	\addbibresource{bibliography.bib}	    % Add file bibliography.bib as biblatex resource
+	\DefineBibliographyStrings{ngerman}{andothers = {{et\,al\adddot}},}
+	\AdaptNoteOpt\footcite\multfootcite   % Will add  separators if footcite is called multiple consecutive times 
+	\AdaptNoteOpt\autocite\multautocite   % Will add  separators if autocite is called multiple consecutive times
+}
+
+\newcommand{\setTitlepage}{
+	\input{titlepage}
+	\pagenumbering{roman} % Römische Seitennummerierung
+	\normalfont	
+}
+
+%
+% @stud
+%
+\newcommand{\settingLists}{
+	%	Inhaltsverzeichnis
+	\tableofcontents
+	%	Abbildungsverzeichnis
+	\listoffigures
+	%	Tabellenverzeichnis
+	\listoftables
+	%	Listingsverzeichnis / Quelltextverzeichnis
+	\lstlistoflistings
+	% Algorithmenverzeichnis
+	\listofalgorithms
+}
+
+\newcommand{\initializeText}{
+	\clearpage
+	\ihead{\chaptername~\thechapter} % Neue Header-Definition
+	\pagenumbering{arabic}           % Arabische Seitenzahlen
+}
+
+\newcommand{\initializeBibliography}{
+	\ihead{}
+	\printbibliography[title=\Literaturverzeichnis] 
+	\cleardoublepage
+}
+
+\newcommand{\initializeAppendix}{
+	\appendix
+	\ihead{\appendixname~\thechapter}
+}
+

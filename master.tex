@@ -1,105 +1,193 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Vorlage von:
 %
-%   Prof. Dr. Julian Reichwald
-%   auf Basis einer Vorlage von Prof. Dr. Jörg Baumgart
-%   DHBW Mannheim
+%   Prof. Dr. Bernhard Drabant 
 %
+%   auf der Grundlage einer Vorlage von Prof. Dr. Julian Reichwald
 %
-%	ACHTUNG: Für das Erstellen des Literaturverzeichnisses wird das modernere Paket biblatex
-%			 in Kombination mit biber verwendet -- nicht mehr das ältere BibTex!
-% 			 Bitte stellen Sie ggf. Ihre TeX-Umgebung
-% 			 entsprechend ein (z.B. TeXStudio: Einstellungen --> Erzeugen --> Standard Bibliographieprogramm: biber)
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[
-	12pt,
-	BCOR=5mm,
-	DIV=12,
-	headinclude=on,
-	footinclude=off,
-	parskip=half,
-	bibliography=totoc,
-	listof=entryprefix,
-	toc=listof,
-	pointlessnumbers,
-	plainfootsepline]{scrreprt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	ANLEITUNG: 
+%
+%   1. Ersetzen Sie firmenlogo.jpg im Verzeichnis img
+%   2. Passen Sie alle Stellen im Dokument 
+%      an, die mit @stud markiert sind
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%	Konfigurationsdatei einziehen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	ACHTUNG: 
+%
+%   Für das Erstellen des Literaturverzeichnisses wird das 
+%   modernere Paket biblatex in Kombination mit biber 
+%   verwendet -- nicht mehr das ältere BibTex!
+%   Bitte stellen Sie ggf. Ihre TeX-Umgebung entsprechend 
+%   ein (z.B. TeXStudio: Einstellungen --> Erzeugen --> 
+%   Standard Bibliographieprogramm: biber)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,BCOR=5mm,DIV=12,headinclude=on,footinclude=off,parskip=half,bibliography=totoc,listof=entryprefix,
+               toc=listof,pointlessnumbers,plainfootsepline]{scrreprt}
+
+% Elementare Konfigurationen und Definitionen werden geladen
 \input{config}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% @stud
+%
+%	SCHRIFTART (Schrift mit oder ohne Serifen im gesamten Text) 
+%
+% mit Serifen
+%\addtokomafont{disposition}{\rmfamily}
+%\renewcommand*{\familydefault}{\rmdefault}
+% ohne Serifen
+%1 \addtokomafont{disposition}{\sffamily}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% @stud
+%
+% PERSÖNLICHE ANGABEN (BITTE VOLLSTÄNDIG EINGEBEN zwischen den Klammern: {...})
+%
+\ArtDerArbeit{<Bachelor>/<Projekt>} % "Bachelor" oder "Projekt" wählen
+\TitelDerArbeit{<Titel Ihrer Arbeit>}
+\AutorDerArbeit{<Ihr Vor- und Nachname>}
+\Abteilung{<Ihre Abteilung>}
+\Firma{<Ihre Firma>}
+\Kurs{<Ihr Kurs>}
+\Studienrichtung{<Ihre Studienrichtung>}
+\Matrikelnummer{<Ihre Martikelnummer>}
+\Studiengangsleiter{<Ihr Studiengangsleiter>}
+\WissBetreuer{<Ihr(e) wissenschaftliche(r) Betreuer(in)>}
+\FirmenBetreuer{<Ihr(e) Firmenbetreuer(in)>}
+\Bearbeitungszeitraum{dd.mm.yyyy -- DD.MM.YYYY}
+\Abgabedatum{dd.mm.yyyy}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% @stud
+%
+%	BIBLIOGRAPHY (@stud: Bibliographie-Stil wählen - Position und Indizierung)
+%
+% Auswahl zwischen: IEEE Style, ALPHABETIC Style, HARVARD Style, AUTHOR-YEAR Style 
+%
+% (oder eigenen zulässigen Stil wählen) 
+%
+
+% Position des Zitats
+%
+\newcommand{\position}{inline} 
+%\newcommand{\position}{footnote}
+
+% Indizierung des Zitats
+%
+% 1) NUMERIC Style - e. g. [12]
+\newcommand{\indextype}{numeric} 
+%
+% 2) ALPHABETIC Style - e. g. [AB12]
+%\newcommand{\indextype}{alphabetic} 
+%
+% 3) IEEE Style - numeric kind of style 
+%\newcommand{\indextype}{ieee} 
+%
+% 4) HARVARD Style 
+%\newcommand{\indextype}{apa} 
+%
+% 5) CHICAGO Style 
+%\newcommand{\indextype}{authoryear}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand*{\familydefault}{\sfdefault}
+
+\usepackage[backend=biber, autocite=\position, style=\indextype]{biblatex} 	
+
+\settingBibFootnoteCite
+
+\newcommand{\abs}{\par\vskip 0.2cm\goodbreak\noindent}
+\newcommand{\nl}{\par\noindent}
+\newcommand{\mcl}[1]{\mathcal{#1}}
+\newcommand{\nowrite}[1]{}
+\newcommand{\NN}{{\mathbb N}}
+
+\newcommand{\imagedir}{img}
+
+\makeindex
 
 \begin{document}
 
-%% BITTE GEBEN SIE HIER DEN TITEL UND DIE AUTORIN / DEN AUTOR DER ARBEIT AN!
-%% DIESE INFORMATIONEN _MÜSSEN_ GESETZT SEIN, UM TITELBLATT, ABSTRACT UND
-%% EIGENSTÄNDIGKEITSERKLÄRUNG AUTOMATISCH ANZUPASSEN!
-\TitelDerArbeit{Entwurf und Implementierung eines verteilten, direkten Suchverfahrens}
-\AutorDerArbeit{Erika Musterfrau}
-\Firma{Musterbetrieb AG}
-\Kurs{WWI14SEA}
+\setTitlepage
 
-\input{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% KAPITEL UND ANHÄNGE
+%
+% @stud:
+%   - nicht benötigte: auskommentieren/löschen
+%   - neue: bei Bedarf hinzufügen mittels input-Kommando an entsprechender Stelle einfügen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\pagenumbering{roman} % Römische Seitennummerierung
-\normalfont
+% EHRENWÖRTLICHE ERKLÄRUNG
+%
+% @stud: ewerkl.tex bearbeiten
+%
+\input{ewerkl} 
 
-%--------------------------------
-% Verzeichnisse - nicht benötige Verzeichnisse bitte auskommentieren / löschen.
-%--------------------------------
+% SPERRVERMERK
+%
+% @stud: nondisclosurenotice.tex bearbeiten
+%
+\input{nondisclosurenotice} 
 
-%   Sperrvermerk
-\input{nondisclosurenotice}
+%	KURZFASSUNG
+%
+% @stud: abstract.tex bearbeiten
+%
+\input{abstract} 
 
-%	Kurzfassung
-\pdfbookmark{Kurzfassung}{kurzfassung-bookmark}
-\input{abstract}
+% VERZEICHNISSE
+%
+% @stud: ggf. nicht benötigte Verzeichnisse auskommentieren/löschen in Def. von \settingLists in config.tex
+%
+\settingLists
 
-%	Inhaltsverzeichnis
-\clearpage
-\pdfbookmark{Inhaltsverzeichnis}{toc-bookmark}
-\tableofcontents
+% ABKÜRZUNGSVERZEICHNIS
+%
+% @stud: acronyms.tex bearbeiten
+%
+\input{acronyms} 
 
-%	Abbildungsverzeichnis
-\listoffigures
+\initializeText
 
-%	Tabellenverzeichnis
-\listoftables
+% KAPITEL DER ARBEIT
+%
+% @stud: eigene Kapitel hier einfügen und bearbeiten nach dem Muster der Beispielkapitel
+%
+\input{chapter1}
+\input{chapter2}
 
-%	Listingsverzeichnis
- \lstlistoflistings
+\initializeAppendix
 
-% 	Algorithmenverzeichnis
-\listofalgorithms
+% ANHÄNGE DER ARBEIT
+%
+% @stud: eigene Anhänge hier einfügen und bearbeiten nach dem Muster der Beispielanhänge
+%
+\input{appendix1}
+\input{appendix2}
 
-% 	Abkürzungsverzeichnis (siehe Datei acronyms.tex!)
-\input{acronyms}
-\ohead{Abkürzungsverzeichnis} % Neue Header-Definition
+%
+% @stud: Literaturverzeichnis in Datei bibliography.bib anpassen 
+%
+\initializeBibliography
 
-%--------------------------------
-% Start des Textteils der Arbeit
-%--------------------------------
-\clearpage
-\ihead{\chaptername~\thechapter} % Neue Header-Definition (inner header)
-\ohead{\headmark} % Neue Header-Definition (outer header)
-\pagenumbering{arabic}  % Arabische Seitenzahlen
-
-%	Anleitungs-Datei anleitung.tex einziehen. Auf diese Weise sollten Sie versuchen, für jedes einzelne
-% Kapitel eine eigene Datei anzulegen und mittels input-Kommando einzuziehen.
-\input{anleitung}
-
-%	Literaturverzeichnis
-\clearpage
-\ihead{}
-\printbibliography[title=Literaturverzeichnis]
-\cleardoublepage
-
-% Der Anhang beginnt hier - jedes Kapitel wird alphabetisch aufgezählt. (Anhang A, B usw.)
-\appendix
-\ihead{\appendixname~\thechapter} % Neue Header-Definition
-
-% appendix.tex einziehen
-\input{appendix}
-
-% Ehrenwörtliche Erklärung ewerkl.tex einziehen
-\input{ewerkl.tex}
-
+\addcontentsline{toc}{chapter}{Index}
+\printindex
 
 \end{document}
