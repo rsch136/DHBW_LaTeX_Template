@@ -1,10 +1,13 @@
 # LaTeX-Template for Project- and Bachelorthesis at DHBW Mannheim
 
+This GitHub repository provides instructions, best practices, and a template for writing a project or bachelor thesis at the Department of Business Informatics at DHBW Mannheim.
+
 ## General Notes
-* __This template is just a sample!__ Please adapt it to the requirements of your scientific advisor (i.e. adapt citation style, page margins etc.)
+* __The template is just a sample!__ Please adapt it to the requirements of your scientific advisor (i.e. adapt citation style, page margins etc.)
 * __Always use the latest version of this template!__
 * The template is written for a thesis in German, but can be adapted easily to other languages.
 * **Using this template requires basic knowledge of LaTeX! Please get used to it *before* you start writing!**
+* If you prefer to work with other text processing tools, you may nonetheless use **`master.pdf`** as guideline for the general sttructure of your project of bachelor thesis.
 * [Here](hinweise-wissenschaftliche-arbeiten.md) are some general remarks (in German) on how to write scientific your thesises.
 
 
@@ -41,11 +44,10 @@ The file **`master.tex`** is the TeX root file which can be compiled directly. A
 
 The file **`config.tex`** includes relevant packages and does some configuration stuff. Nearly every property or characteristic can be configured/modified here, beginning from page layout, header and footer, citaion style etc.). *Please also read the comments in the file catefully and - if needed - read the package documentations at [CTAN](http://www.ctan.org)!*
 
-In particular adapt in master.tex and config.tex all parts which are marked with 
-`@stud`.
+In particular adapt in master.tex and config.tex all parts which are marked with **`@stud`**.
 
 Lists of figures, tables, coding sections, algorithms will be generated automaticvally during LaTeX compilation if these items are properly captioned -- see LaTeX instructions for details. Acronyms will be maintained in file **`acronyms.tex`**. The acronyms list will then also be generated automatically upon compilation with LaTeX.
 
-The package contains sample chater and appendix files which may be adapted and extended. Additional chapter and appendix files need to be included in the `master.tex` file.
+The package contains sample chapter and appendix files which may be adapted and extended. Additional chapter and appendix files need to be included in the `master.tex` file.
 
-If nexessarx, replace the graphics file **`firmenlogo.jpg`** in folder `./img` by the logo of your company. Adjust the size in your thesis by adjusting the scale of the image of the logo in **`titlepage.tex`**.
+If you want to use a logo of your company replace the graphics file **`firmenlogo.jpg`** in folder `./img` by the logo of your company. Adjust the size of the logo by setting the scale factor of the image in **`titlepage.tex`**.
