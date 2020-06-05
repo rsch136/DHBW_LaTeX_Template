@@ -135,58 +135,90 @@
 %   - neue: bei Bedarf hinzufügen mittels input-Kommando an entsprechender Stelle einfügen
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % EHRENWÖRTLICHE ERKLÄRUNG
 %
 % @stud: ewerkl.tex bearbeiten
 %
 \input{ewerkl} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SPERRVERMERK
 %
 % @stud: nondisclosurenotice.tex bearbeiten
 %
 \input{nondisclosurenotice} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	KURZFASSUNG
+%
+% @stud: acknowledge.tex bearbeiten
+%
+\input{acknowledge} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	KURZFASSUNG
 %
 % @stud: abstract.tex bearbeiten
 %
 \input{abstract} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % VERZEICHNISSE
 %
 % @stud: ggf. nicht benötigte Verzeichnisse auskommentieren/löschen in Def. von \settingLists in config.tex
 %
 \settingLists
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ABKÜRZUNGSVERZEICHNIS
 %
 % @stud: acronyms.tex bearbeiten
 %
 \input{acronyms} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \initializeText
 
-% KAPITEL DER ARBEIT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% KAPITEL
 %
-% @stud: eigene Kapitel hier einfügen und bearbeiten nach dem Muster der Beispielkapitel
+% @stud: einzelne Kapitel bearbeiten und eigene Kapitel hier einfügen
 %
+% Einleitung
+\input{introduction}
+
+% mehrere Grundlagen- und Forschungs-Kapitel
 \input{chapter1}
 \input{chapter2}
 
+% Fazit und Ausblick
+\input{conclusion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \initializeAppendix
 
-% ANHÄNGE DER ARBEIT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ANHÄNGE
 %
-% @stud: eigene Anhänge hier einfügen und bearbeiten nach dem Muster der Beispielanhänge
+% @stud: einzelne Anhänge bearbeiten und eigene Anhänge hier einfügen 
 %
 \input{appendix1}
 \input{appendix2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LITERATURVERZEICHNIS
+% 
 % @stud: Literaturverzeichnis in Datei bibliography.bib anpassen 
 %
 \initializeBibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \addcontentsline{toc}{chapter}{Index}
 \printindex
