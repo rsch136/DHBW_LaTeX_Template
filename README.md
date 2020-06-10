@@ -1,12 +1,12 @@
-# LaTeX-Template for Project and Bachelor Thesis at DHBW Mannheim / Business Informatics
+# LaTeX-Template for Project and Bachelor Theses at DHBW Mannheim / Business Informatics
 
 This GitHub repository provides instructions, best practices, and a __template__ for writing a project or bachelor thesis at the Department of Business Informatics at DHBW Mannheim.
 
 ## General Notes
-* __The template is just a sample!__ Please adapt it to the requirements of your scientific advisor (i.e. adapt citation style, page margins etc.)
+* __The template is just a sample!__ Please adapt it to your requirements which you agree upon with your scientific advisor. E. g. adapt citation style, page margins, etc.
 * Always use the latest version of this template.
 * The template is written for a thesis in German, but can be adapted easily to other languages.
-* The template is pure LaTeX. It requires **basic knowledge of LaTeX**. Please get used to it *before* you start writing.
+* The template is written in pure LaTeX. It requires **basic knowledge of LaTeX**. Please get used to it *before* you start writing.
 * If you prefer to work with other type setting systems, you should nonetheless consider the document **`master.pdf`** as guideline for the general structure of your project or bachelor thesis.
 * The document ["Allgemeine Hinweise für das wissenschaftliche Arbeiten"](hinweise-wissenschaftliche-arbeiten.md) (in German) summarises some general tips, hints, best practices, etc. on how to write scientific theses and articles. It is by no means exhaustive, and the participation in the lectures on scientific working is required.
 
