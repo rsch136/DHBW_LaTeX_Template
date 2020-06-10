@@ -1,4 +1,4 @@
-# LaTeX-Template for Project- and Bachelorthesis at DHBW Mannheim
+# LaTeX-Template for Project and Bachelor Thesis at DHBW Mannheim / Business Informatics
 
 This GitHub repository provides instructions, best practices, and a __template__ for writing a project or bachelor thesis at the Department of Business Informatics at DHBW Mannheim.
 
