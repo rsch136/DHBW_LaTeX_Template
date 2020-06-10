@@ -29,16 +29,16 @@ Next, you need a LaTeX Editor. Any text editor (e.g. vi/vim, atom, sublime etc.)
 
 Clone/download the template or the complete GitHup repository to your local environment and unpack it to a directory of your choice. 
 
-The template files are commented in detail. Moreover, there is an instruction document **`anleitung.tex`** (in German) which explains the basic usage of the template.
-
 **Important:** Instead of BibTeX, the template uses the newer BibLaTeX/Biber combination. Please adjust your LaTeX environment accordingly when you get strange errors referring to the bibliography, since most editors default to BibTeX.
 
 ## Explanation of the template
 The file **`master.tex`** is the LaTeX root file which can be compiled directly. All other `.tex`-files are incuded there. 
 
+The template files are commented in detail. Moreover, there is an instruction document **`anleitung.tex`** (in German) which explains the basic usage of the template.
+
 Read the comments in all the `.tex`-files carefully, since you'll likely need to modify configurations and content, e.g. for disabling unused parts like the *List of Algorithms* etc. The file **`config.tex`** includes relevant packages and provides a great portion of configuration settings. Nearly every property or characteristic can be configured/modified/addee here, beginning from page layout, header and footer, citation style etc. *If needed read the LaTeX package documentations at [CTAN](http://www.ctan.org)!*
 
-Adapt in the `.tex`-files, in particular in `master.tex` and `config.tex`, all parts which are marked with **`@stud`**.
+Adapt in the `.tex`-files, in particular in `master.tex` and `config.tex`, especially all parts which are marked with **`@stud`**.
 
 Citation examples are included in the file **`bibliography.bib`** -- articles, books, online references, etc.
 
