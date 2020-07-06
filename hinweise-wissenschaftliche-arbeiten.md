@@ -325,3 +325,6 @@ Gemäß der inhaltlichen und formalen Vorgaben der im Studiengang ausgehändigte
 [3] M. Karmasin und R. Ribing. *Die Gestaltung wissenschaftlicher Arbeiten: Ein Leitfaden für Facharbeit/VWA, Seminararbeiten, Bachelor-, Master-, Magister- und Diplomarbeiten sowie Dissertationen*. UTB-Verlag, 9. Auflage (2017).
 
 [4] N. Stranghörner. *Kriterien zur Bewertung von Diplom-, Bachelor- und Masterarbeiten*. https://www.uni-due.de/iml/07studium_abschlussarbeiten_bewertung.php
+
+[5] Berit Sandberg. *Wissenschaftlich Arbeiten von Abbildung bis Zitat: Lehr- und Übungsbuch für Bachelor, Master und Promotion*. https://en.wikipedia.org/wiki/Special:BookSources?isbn=978-3486716351
+
