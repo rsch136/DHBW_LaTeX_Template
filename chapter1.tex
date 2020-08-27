@@ -3,7 +3,7 @@
 
 \nocite{*}
 
-In diesem Kapitel werden die Grundlagen von \LaTeX vorgestellt.
+In diesem Kapitel werden die Grundlagen von \LaTeX\index{LaTeX@\LaTeX} vorgestellt.
 
 \section{Übersicht über die Vorlage}
 Die Vorlage wurde im UTF-8 Encoding erstellt. Sollten daher z.\,B. Umlaute in Ihrem \LaTeX-Editor nicht korrekt dargestellt werden, überprüfen Sie bitte die Encoding-Ein\-stel\-lun\-gen des Editors. In seltenen Fällen müssen Sie die Vorlage danach noch einmal neu in den Editor einbinden. 
@@ -43,12 +43,14 @@ der Pakete an (\url{https://www.ctan.org}), um deren Verwendung und Möglichkeit
 
 
 \section{Übersetzung von \LaTeX-Dateien}
-Die Übersetzung von \LaTeX-Dateien erfolgt in mehreren Schritten und unter der Zuhilfenahme unterschiedlicher Programme. Das Hauptdokument (hier die Datei \texttt{master.tex}) wird mittels \texttt{pdflatex} zu einem PDF übersetzt. Ggf. ist eine mehrfache Übersetzung notwendig, um z.\,B. das Inhaltsverzeichnis korrekt darzustellen. 
+Die Übersetzung von \LaTeX-Dateien erfolgt in mehreren Schritten und unter der Zuhilfenahme unterschiedlicher Programme. Das 
+Hauptdokument (hier die Datei \texttt{master.tex}) wird mittels \texttt{pdflatex} zu einem PDF übersetzt. 
+Ggf. ist eine mehrfache Übersetzung notwendig, um z.\,B. das Inhaltsverzeichnis korrekt darzustellen. 
 
 Für die Einbindung des Literaturverzeichnisses\index{Literaturverzeichnis} wird nicht mehr das ältere \texttt{bibtex}, sondern das neuere \texttt{biber} in Kombination mit \texttt{biblatex} verwendet. Bitte stellen Sie Ihren \LaTeX-Editor so ein, dass die Verwendung von Biber beim Übersetzungsprozess erfolgt. 
 
 \section{Verwendung von Akronymen}
-Akronyme müssen in der Datei \texttt{acronyms.tex} definiert werden (schauen Sie sich hierzu bitte die entsprechende 
+Akronyme\index{Akronym} müssen in der Datei \texttt{acronyms.tex} definiert werden (schauen Sie sich hierzu bitte die entsprechende 
 Paket-Dokumentation an!). Ein definiertes Akronym kann dann mit dem Befehl \texttt{\textbackslash ac} verwenden, so wird 
 z.\,B. \texttt{\textbackslash ac\{DHBW\}} zu \ac{DHBW}. Im weiteren Verlauf wird das Acronym dann nur noch in der Kurzform 
 dargestellt: \ac{DHBW}. Die Aufnahme eines verwendeten Akronyms in das Abkürzungsverzeichnis erfolgt automatisch 
@@ -62,7 +64,7 @@ Befehl \texttt{\textbackslash cites} oder zum Teil wieder mit
 oder Vgl.~\cite{ME12, TD15} oder oder \cite{ME12, TD15}. Die Übernahme der Quellen in das Literaturverzeichnis erfolgt automatisch. 
 Ein Beispiel für eine Online-Quelle ist ebenfalls enthalten \cite{TestOnlineQuelle}.
 
-Wird \texttt{cite} oder \texttt{cite} konsequent verwendet, kann in der Datei \texttt{config.tex} der Zitierstil umgeschaltet 
+Wird \texttt{cite} oder \texttt{cite} konsequent verwendet, kann in der Datei \texttt{config.tex} der Zitierstil\index{Zitierstil} umgeschaltet 
 werden, ohne dass im Text Veränderungen vorgenommen werden müssen. Vorkonfigurierte Stile sind Numerisch (numeric), 
 Alphabetisch (alphabetic), IEEE (ieee), Harvard (apa), Chicago (authoryear), etc.~entweder im Text (inline) oder als Fußnoten 
 (footnote). Im vorliegenden Text wird der Stil (\indextype)/(\position) verwendet.
@@ -81,19 +83,28 @@ Soll ein Text in Anführungszeichen gesetzt werden, kann dies über den Befehl \
 jeweiligen Länderspezifika, wenn die Spracheinstellung des \texttt{babel}-Pakets geändert wird. Voreinstellung ist die deutsche Verwendung von 
 Anführungszeichen.
 
+\section{Verwendung eines Index}
+Wenn Sie einen Index\index{Index} oder Stichwortverzeichnis\index{Stichwortverzeichnis} erstellen wollen, de-kommentieren Sie 
+den Befehl "'\texttt{\textbackslash makeindex}"' in der \LaTeX-Pr\"aambel\index{Pr\"aambel}. Um Eintr\"age Ihres Textes in den Index aufzunehmen, 
+verwenden Sie an der entsprechenden Stelle im Text den Befehl "'\texttt{\textbackslash index\{<Eintrag>\}}"'. Um einen Index zu erstellen, 
+verwenden Sie den Befehl \texttt{makeindex.exe}, der ggf.~auch in Ihrem \LaTeX-Editor als Shortcut enthalten ist. 
+Danach m\"ussen Sie Ihre \LaTeX-Datei erneut kompilieren. Der Index wird am Ende Ihres Dokuments eingefügt.
 
 \section{Beispiele}
 \lipsum[1]
 
 \subsection{Unterabschnitte}
-Es gibt neben \texttt{\textbackslash chapter} auch noch  \texttt{\textbackslash section}, \texttt{\textbackslash subsection}, \texttt{\textbackslash subsubsection} etc. Eine zu starke Untergliederung des Textes sollte jedoch vermieden werden (z.\,B. ein Abschnitt 3.4.2.5.3). 
+Es\index{Unterabschnitte} gibt neben \texttt{\textbackslash chapter} auch noch  \texttt{\textbackslash section}, \texttt{\textbackslash subsection}, \texttt{\textbackslash subsubsection} etc. Eine zu starke Untergliederung des Textes sollte jedoch vermieden werden (z.\,B. ein Abschnitt 3.4.2.5.3). 
 
 \subsection{Tabellen und Abbildungen}
-Tabellen und Abbildungen sind sogenannte \textit{Floating Objects}, d.\,h. \LaTeX\ setzt diese Objekte an Positionen, die satztechnisch geeignet sind. Daher kann es vorkommen, dass Tabellen oder Abbildungen auf einer anderen Seite erscheinen, die dann referenziert werden müssen. Hier ein Beispiel dafür: 
+Tabellen\index{Tabelle} und Abbildungen\index{Abbildung} sind 
+sogenannte \textit{Floating Objects}, d.\,h. \LaTeX\ setzt diese Objekte an Positionen, die satztechnisch geeignet sind. Daher kann es 
+vorkommen, dass Tabellen oder Abbildungen auf einer anderen Seite erscheinen, die dann referenziert werden müssen. Hier ein Beispiel dafür: 
 
-In Tabelle \vref{tab:tabelle1} ist eine Tabelle abgebildet, die mit dem Befehl \texttt{\textbackslash vref} referenziert wurde. Gleiches kann man auch mit Abbildungen 
-machen, wie z.\,B. mit der Abbildung \vref{fig:test}. \LaTeX~ kümmert sich darum, wo die Abbildungen gesetzt werden und passt den Text der Referenz entsprechend an. Soll nur die Nummerierung in den Text geschrieben werden, dann kann auch der Befehl \texttt{\textbackslash ref} verwendet werden.
-Abbildungen sollten -- falls möglich -- als Vektor-PDF eingebunden 
+In Tabelle \vref{tab:tabelle1} ist eine Tabelle abgebildet, die mit dem Befehl \texttt{\textbackslash vref} referenziert wurde. 
+Gleiches kann man auch mit Abbildungen machen, wie z.\,B. mit der Abbildung \vref{fig:test}. \LaTeX~ kümmert sich darum, 
+wo die Abbildungen gesetzt werden und passt den Text der Referenz entsprechend an. Soll nur die Nummerierung in den Text geschrieben werden, 
+dann kann auch der Befehl \texttt{\textbackslash ref} verwendet werden. Abbildungen sollten -- falls möglich -- als Vektor-PDF eingebunden 
 werden, da die diese dann beliebig skalieren können.
 
 \lipsum[1]
@@ -118,7 +129,9 @@ werden, da die diese dann beliebig skalieren können.
 \end{figure}
 	
 \subsection{Mathematische Formeln}
-Auch mathematische Ausdrücke können mit \LaTeX~ sehr gut gesetzt werden, wie man anhand der Gleichungen \vref{eqn:e1} und \vref{eqn:e2} sehen kann -- konsultieren Sie hierzu bitte entsprechende Dokumentationen, die Online zur Verfügung stehen.
+Auch\index{mathematisch!Formel} mathematische Ausdrücke\index{mathematisch!Ausdruck} können mit \LaTeX~ sehr gut gesetzt werden, wie man anhand der 
+Gleichungen\index{mathematisch!Gleichung} \vref{eqn:e1} und \vref{eqn:e2} sehen kann -- konsultieren Sie hierzu bitte entsprechende Dokumentationen, 
+die Online zur Verfügung stehen.
 \begin{equation}
 \left|{1\over N}\sum_{n=1}^N \gamma(u_n)-{1\over 2\pi}\int_0^{2\pi}\gamma(t){\rm d}t\right| \le {\varepsilon\over 3}.\\
 \label{eqn:e1}
@@ -129,10 +142,10 @@ f(x)=x^2
 \label{eqn:e2}
 \end{equation}
 
-
 \subsection{Algorithmen}
-Algorithmen\index{Algorithmus} können als Pseudocodes dargestellt und referenziert werden, wie z.\,B. in Algorithmus \vref{alg:euclid} -- sogar bis auf Zeilennummern
-(siehe die \texttt{while}-Anweisung in Zeile \vref{alg:euclid:while}). Schauen Sie sich hierzu bitte das Paket \texttt{algorithmicx} an.
+Algorithmen\index{Algorithmus} können als Pseudocodes dargestellt und referenziert werden, wie z.\,B. in Algorithmus \vref{alg:euclid} -- 
+sogar bis auf Zeilennummern (siehe die \texttt{while}-Anweisung in Zeile \vref{alg:euclid:while}). Schauen Sie sich hierzu bitte das 
+Paket \texttt{algorithmicx} an.
 
 \begin{algorithm}[H]
 \begin{algorithmic}[1]
