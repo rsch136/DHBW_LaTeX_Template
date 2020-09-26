@@ -36,36 +36,28 @@ immer die zu verwendende Klasse festgelegt. Standardm\"aßig kann hier die Artik
 
 In den eckigen Klammern wird dabei u.a. die Standardschriftgr\"o\ss e f\"ur das gesamte Dokument festgelegt. 
 
-Au\ss erdem werden die f\"ur das Dokument ben\"otigten Pakete festgelegt, die durch \texttt{\textbackslash input\{config\}} in das Hauptdokument eingelesen wird.
-gebr\"auchlich sind vor allem folgende Pakete:
-
+Au\ss erdem werden in der Pr\"aambel die f\"ur das Dokument ben\"otigten Pakete festgelegt. Gebr\"auchlich sind vor allem folgende Pakete:
 {\texttt{
 \begin{itemize}
 	\item \textbackslash usepackage[ngerman]\{babel\}
-	\item 	\textbackslash usepackage[latin1]\{inputenc\}
-	\item 	\textbackslash usepackage\{color\}
-	\item 	\textbackslash usepackage[a4paper]\{geometry\}
-	\item 	\textbackslash usepackage{amssymb}
-	\item 	\textbackslash usepackage{amsthm}
-	\item 	\textbackslash usepackage{graphicx}
+	\item \textbackslash usepackage[latin1]\{inputenc\}
+	\item \textbackslash usepackage\{color\}
+	\item \textbackslash usepackage[a4paper]\{geometry\}
+	\item \textbackslash usepackage\{amssymb\}
+	\item \textbackslash usepackage\{amsthm\}
+	\item \textbackslash usepackage\{graphicx\}
 \end{itemize}
 }
 
-Im vorliegenden Fall werden die Pakete in der Konfigurationsdatei \texttt{config.tex} festgelegt, die durch 
-\texttt{\input\{config\}} in das Hauptdokument \texttt{master.tex} eingelesen wird.
+Im vorliegenden Fall werden die Pakete in der Konfigurationsdatei \texttt{config.tex} festgelegt, deren Inhalt durch 
+\texttt{\textbackslash input\{config\}} in das Hauptdokument \texttt{master.tex} inkludiert wird.
 
 \subsubsection{Beispiel Unterabschnitt auf zweiter Ebene: Titelseite}
 
 Nachdem die Dokumenten-Klasse und die zu verwendenden Pakete festgelegt worden sind,
 folgt die Titelseite. Da die Titelseite bereits Teil des eigentlichen Dokuments ist, muss ihr
-unbedingt folgender Befehl vorausgehen:
-
-\texttt{\textbackslash begin\{document\}}
-
-Am Ende des Dokuments sollte der Befehl
-\texttt{\textbackslash end\{document\}}
-
-gesetzt werden. Alles was nach diesem Befehl steht, wird vom Compiler nicht mehr beachtet.
+unbedingt der Befehl \texttt{\textbackslash begin\{document\}} vorausgehen. Am Ende des Dokuments sollte der Befehl
+\texttt{\textbackslash end\{document\}} gesetzt werden. Alles was nach diesem Befehl steht, wird vom Compiler nicht mehr beachtet.
 
 \subsubsection{Beispiel Unterabschnitt auf zweiter Ebene: Textteil}
 
