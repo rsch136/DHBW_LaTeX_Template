@@ -2,13 +2,13 @@
 
 Dieses Dokument enthält Hinweise für die Erstellung wissenschaftlicher Arbeiten. Diese sollten beim Erstellen der Arbeit berücksichtigt werden. Die Liste der Hinweise ist weder vollständig noch erhebt sie den Anspruch weiterführende Literatur zu wissenschaftlichem Arbeiten zu ersetzen.
 
-In Projekt-, Bachelor- und Masterarbeiten setzen sich Studierende mit einer vorgegebenen fachlichen Fragestellung in entsprechender Tiefe und gemäß wissenschaftlicher Kriterien auseinander. Die Beantwortung der Fragestellung erfolgt im Rahmen einer schriftlichen Arbeit. 
+In Projekt-, Bachelor- und Masterarbeiten setzen sich Studierende mit einer vorgegebenen fachlichen Fragestellung in entsprechender wissenschaftlicher Tiefe und gemäß wissenschaftlicher Kriterien auseinander. Die Untersuchung und Beantwortung der Fragestellung erfolgt im Rahmen einer schriftlichen Arbeit unter Verwendung wissenschaftlicher Methoden und Systematik. 
 
-In den Arbeiten werden eigene Forschungen betrieben sowie eigene Ideen, Konzepte und Lösungen bereitgestellt, mit deren Hilfe letztendlich die Forschungsfrage beantwortet werden kann. 
+In der wissenschaftlichen Arbeit werden eigene Forschungen betrieben sowie eigene Ideen, Konzepte und Lösungen bereitgestellt, mit deren Hilfe letztendlich die Forschungsfrage beantwortet werden kann. Eine mit wissenschaftlichen Kriterien durchgeführte Untersuchung, die zeigt, dass die Forschungsfrage nicht oder nicht in dem vorgegebenen Kontext beantwortet werden kann, ist auch ein mögliches Ergebnis des wissenschaftlichen Arbeitens.
 
-Eine mit wissenschaftlichen Kriterien durchgeführte Untersuchung, die zeigt, dass die Forschungsfrage nicht oder nicht in dem vorgegebenen Kontext beantwortet werden kann, ist auch ein mögliches Ergebnis des wissenschaftlichen Arbeitens.
+Der wissenschaftliche Anspruch an die Arbeit richtet sich nach der Art der Arbeit. In der ersten Projektarbeit wird primär auf die formalen Kriterien wissenschaftlichen Arbeitens Wert gelegt, wenngleich auch eine korrekte und sachgemäße Formulierung der wissenschaftlichen Fragestellung, der Methodik und Systematik erwartet wird. In der zweiten Projektarbeit wird auf die formalen Kriterien wissenschaftlichen Arbeitens und die korrekte Herangehensweise Wert gelegt und ein größerer Tiefgang der wissenschaftlichen Fragestellung erwartet. In der Bachelor-Arbeit kommt diesen Kriterien letztendlich noch größeres Gewicht zu. Dabei ist stets zu beachten, dass die Anforderungen an die zu erzielenden wissenschaftlichen Ergebnisse im Kontext des Kenntnislevels der Studierenden im jeweiligen Semester zu bewerten sind.
 
-## Grundlegende Anforderungen an die Wissenschaftlichkeit von Abschlussarbeiten
+## Grundlegende Anforderungen an die Wissenschaftlichkeit von Projekt- und Abschlussarbeiten
 
 Gemäß den Darlegungen in [4].
 
@@ -101,6 +101,8 @@ Prinzipiell setzt sich die Gesamtnote für die schriftliche Abschlussarbeit aus 
 
 ## Wissenschaftliche Vorgehensweise - weitere Details
 
+In diesem Abschnitt werden weitergehende Kriterien wissenschaftlichen Arbeitens beschrieben.
+
 ### Konkrete wissenschaftliche Fragestellung herausarbeiten
 - Welche wissenschaftliche Frage wird in der Arbeit untersucht und mit wissenschaftlichen Methoden beantwortet?
 
@@ -170,6 +172,8 @@ Prinzipiell setzt sich die Gesamtnote für die schriftliche Abschlussarbeit aus 
   - Wie kommt man zu dem Gütekriterium? 
  
 ## Formale Kriterien - weitere Details
+
+Neben administrativen und organisatorischen Aspekten werden Vorgaben zu Gliederung, Form und Layout beschrieben.
 
 ### Anmeldung der wissenschaftlichen Arbeit 
 - Grundlegendes
@@ -248,7 +252,7 @@ Gemäß der inhaltlichen und formalen Vorgaben der im Studiengang ausgehändigte
   - Wissenschaftliche Literatur
     - Artikel in wissenschaftlichen Fachzeitschriften, Monographien, veröffentlichte Diplom- und Masterarbeiten, Dissertationen, Habilitationen, wissenschaftliche Sammelbände und Konferenzberichte, veröffentlichte wissenschaftliche Artikel von Institutionen, Festschriften 
   - nicht-wissenschaftliche Literatur
-    - Fachbücher, Artikel in Zeitschriften, fachliche Dokumenationen, Handbücher, Lexika, Zeitungsartikel, etc.
+    - Fachbücher, Artikel in Zeitschriften, fachliche Dokumentationen, Handbücher, Lexika, Zeitungsartikel, etc.
   - graue Literatur - stets abschätzen, ob sie überhaupt verwendet werden soll
     - Vorabveröffentlichungen, Wikipedia 
   
@@ -298,10 +302,37 @@ Gemäß der inhaltlichen und formalen Vorgaben der im Studiengang ausgehändigte
     - [Vektorgrafik](https://de.wikipedia.org/wiki/Vektorgrafik) anstelle von [Rastergrafik bzw. Pixelbildern](https://de.wikipedia.org/wiki/Rastergrafik)
     - Wenn Bild nur in schlechter Qualität zur Verfügung steht: Vektorgrafik selbst erstellen
 
-- Textsatz
-  - Blocksatz statt Flattersatz verwenden: es soll ein homogener linker und rechter Rand entstehen. 
-  - Nur einen Absatztyp verwenden 
-  - Festgelegte Abstände zwischen Überschriften, Absätzen, Abschnitten verwenden
+### Umfang, Layout, Bindung, Einreichung
+- Umfang
+  - Der Umfang der Projektarbeit soll in der Regel  20  bis  30  Textseiten  betragen.   
+  - Der Umfang der Bachelorarbeit soll in der Regel 40 bis 60 Textseiten betragen.  
+  - Bei  der  Ermittlung  des  Textseitenumfangs  werden Verzeichnisse, Anhänge etc. nicht berücksichtigt.
+  - Abweichungen davon können mit dem wissenschaftlichen Betreuer vereinbart werden.
+  
+- Layout (bis auf Auswahl der Schriftart in LaTeX-Vorlage bereits voreingestellt)
+  - Blocksatz statt Flattersatz verwenden: Homogener linker und rechter Rand. 
+  - Nur einen Absatztyp verwenden. 
+  - Festgelegte Abstände zwischen Überschriften, Absätzen, Abschnitten verwenden.
+  - Papiergröße: DIN A4
+  - Seitenränder: links: 3 cm / rechts: 2,5 cm / oben: 2,5 cm / unten: 2,5 cm
+  - Schriftgröße: 12 pt
+  - Schriftart: Serifenschrift (z. B. Times New Roman) oder serifenlose Schrift (z. B. Calibri)
+  - Zeilenabstand:
+    - im Text (Kapitel und Anhänge): 1,5-fach
+    - sonst: einfach
+
+- Sprache: Deutsch oder englisch
+
+- Bindung
+  - Klebebindung mit transparentem Deckfolienblatt oder Hardcover
+  - Gegebenenfalls auf Hardcover: Hochschule, Titel, Art der Arbeit, Autor(in)  
+
+- Elektronisches Material
+  - Gegebenenfalls CD/DVD mit elektronischen Dokumenten und Daten **in** der Arbeit durch Klebefolie befestigen
+
+- Einreichung der Arbeit
+  - Ein gebundenes Exemplar für die Hochschule mit unterzeichneter ehrenwörtlicher Erklärung.
+  - Abstimmung mit wissenschaftlichem(r) Betreuer(in): Entweder in elektronischer Form und/oder gebunden.
   
 ## Weitere Informationen und Tipps
 
@@ -325,6 +356,3 @@ Gemäß der inhaltlichen und formalen Vorgaben der im Studiengang ausgehändigte
 [3] M. Karmasin und R. Ribing. *Die Gestaltung wissenschaftlicher Arbeiten: Ein Leitfaden für Facharbeit/VWA, Seminararbeiten, Bachelor-, Master-, Magister- und Diplomarbeiten sowie Dissertationen*. UTB-Verlag, 9. Auflage (2017).
 
 [4] N. Stranghörner. *Kriterien zur Bewertung von Diplom-, Bachelor- und Masterarbeiten*. https://www.uni-due.de/iml/07studium_abschlussarbeiten_bewertung.php
-
-[5] Berit Sandberg. *Wissenschaftlich Arbeiten von Abbildung bis Zitat: Lehr- und Übungsbuch für Bachelor, Master und Promotion*. https://en.wikipedia.org/wiki/Special:BookSources?isbn=978-3486716351
-
