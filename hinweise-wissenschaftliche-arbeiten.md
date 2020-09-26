@@ -8,7 +8,7 @@ In der wissenschaftlichen Arbeit werden eigene Forschungen betrieben sowie eigen
 
 Der wissenschaftliche Anspruch an die Arbeit richtet sich nach der Art der Arbeit. In der ersten Projektarbeit wird primär auf die formalen Kriterien wissenschaftlichen Arbeitens Wert gelegt, wenngleich auch eine korrekte und sachgemäße Formulierung der wissenschaftlichen Fragestellung, der Methodik und Systematik erwartet wird. In der zweiten Projektarbeit wird auf die formalen Kriterien wissenschaftlichen Arbeitens und die korrekte Herangehensweise Wert gelegt und ein größerer Tiefgang der wissenschaftlichen Fragestellung erwartet. In der Bachelor-Arbeit kommt diesen Kriterien letztendlich noch größeres Gewicht zu. Dabei ist stets zu beachten, dass die Anforderungen an die zu erzielenden wissenschaftlichen Ergebnisse im Kontext des Kenntnislevels der Studierenden im jeweiligen Semester zu bewerten sind.
 
-## Grundlegende Anforderungen an die Wissenschaftlichkeit von Projekt- und Abschlussarbeiten
+## Grundlegende Anforderungen
 
 Gemäß den Darlegungen in [4].
 
