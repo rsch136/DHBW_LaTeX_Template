@@ -6,6 +6,7 @@
 *.log
 *.lof
 *.glo
+*.idx
 *.ist
 *.lot
 *.loa
@@ -24,5 +25,6 @@
 *.xml
 *.xdy 
 ._*
+*.synctex(busy)
 *.synctex.gz
 !**/img/*.pdf
