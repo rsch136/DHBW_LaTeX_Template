@@ -10,7 +10,7 @@ Der wissenschaftliche Anspruch an die Arbeit richtet sich nach der Art der Arbei
 
 ## Grundlegende Anforderungen
 
-Gemäß den Darlegungen in [4,5].
+Gemäß den Darlegungen in [3,4].
 
 - Nachweis von im Studium erworbenen Fachkenntnissen 
 - Fähigkeit zum systematischen und methodisch korrekten Bearbeiten eines begrenzten Themas 
@@ -199,7 +199,7 @@ Neben administrativen und organisatorischen Aspekten werden Vorgaben zu Gliederu
 
 ### Gliederung und Inhalte der wissenschaftlichen Arbeit
 
-Gemäß der inhaltlichen und formalen Vorgaben der im Studiengang ausgehändigten Musterarbeit und unter Berücksichtigung der relevanten Informationen aus [1,2,3].
+Gemäß der inhaltlichen und formalen Vorgaben der im Studiengang ausgehändigten Musterarbeit und unter Berücksichtigung der relevanten Informationen aus [1,2].
 
 #### Gliederung 
 - Deckblatt 
@@ -354,12 +354,10 @@ Gemäß der inhaltlichen und formalen Vorgaben der im Studiengang ausgehändigte
   - auf Deutsch und ggf. auf Englisch, wenn die Arbeit auf Englisch verfasst wurde
 
 ## Literatur (Auszug)
-[1] M. Kornmeier. *Wissenschaftlich schreiben leicht gemacht: für Bachelor, Master und Dissertation*. UTB-Verlag, 4. Auflage (2011).
+[1] M. Kornmeier. *Wissenschaftlich schreiben leicht gemacht: für Bachelor, Master und Dissertation*. 4. Auflage. UTB-Verlag (2011)
 
-[2] IB DHBW Mannheim. *Leitfaden zur Gestaltung wissenschaftlicher Arbeiten (Seminar-, Projekt- und Bachelorarbeiten)*. http://www.ib.dhbw-mannheim.de/fileadmin/ms/bwl-ib/Downloads_alt/Leitfaden_31.05.pdf (2011).
+[2] M. Karmasin und R. Ribing. *Die Gestaltung wissenschaftlicher Arbeiten: Ein Leitfaden für Facharbeit/VWA, Seminararbeiten, Bachelor-, Master-, Magister- und Diplomarbeiten sowie Dissertationen*. 9. Auflage. UTB-Verlag (2017)
 
-[3] M. Karmasin und R. Ribing. *Die Gestaltung wissenschaftlicher Arbeiten: Ein Leitfaden für Facharbeit/VWA, Seminararbeiten, Bachelor-, Master-, Magister- und Diplomarbeiten sowie Dissertationen*. UTB-Verlag, 9. Auflage (2017).
+[3] N. Stranghörner. *Kriterien zur Bewertung von Diplom-, Bachelor- und Masterarbeiten*. https://www.uni-due.de/iml/07studium_abschlussarbeiten_bewertung.php
 
-[4] N. Stranghörner. *Kriterien zur Bewertung von Diplom-, Bachelor- und Masterarbeiten*. https://www.uni-due.de/iml/07studium_abschlussarbeiten_bewertung.php
-
-[5] B. Sandberg. *Wissenschaftlich Arbeiten von Abbildung bis Zitat: Lehr- und Übungsbuch für Bachelor, Master und Promotion*. https://en.wikipedia.org/wiki/Special:BookSources?isbn=978-3486716351
+[4] B. Sandberg. *Wissenschaftliches Arbeiten von Abbildung bis Zitat: Lehr- und Übungsbuch für Bachelor, Master und Promotion*. 3. Auflage. De Gruyter Studium (2016)
