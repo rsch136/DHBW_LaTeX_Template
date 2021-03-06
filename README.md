@@ -54,4 +54,4 @@ The GitHub bundle contains sample chapter and appendix files which may be adapte
 
 If you want to use a logo of your company replace the graphics file **`firmenlogo.jpg`** in folder `./img` by the logo of your company. Adjust the size of the logo by setting the scale factor of the image in **`titlepage.tex`**.
 
-For editing via the LyX graphical editor see the **`thesis.lyx``** template file. 
+For editing via the LyX graphical editor see the **`thesis.lyx`** template file. 
