@@ -27,7 +27,7 @@ Next, you need a LaTeX Editor. Any text editor (e.g. vi/vim, atom, sublime etc.)
 
 Alternatively, you may choose the LyX graphical editor, which allows you to use all LaTeX features, but simplifies some tasks by its graphical user interface. This still needs a fully working LaTeX installation.
 
-* [LyX][https://www.lyx.org) (platform independent)
+* [LyX](https://www.lyx.org) (platform independent)
 
 ### Template Installation
 
