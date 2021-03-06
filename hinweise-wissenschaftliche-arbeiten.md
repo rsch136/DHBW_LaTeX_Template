@@ -353,6 +353,8 @@ Gemäß der inhaltlichen und formalen Vorgaben der im Studiengang ausgehändigte
 - Für die Prüfungen (Projekt, Bachelor, Master) die Kurzfassung/Abstract der Arbeit als separates Dokument bereitstellen
   - auf Deutsch und ggf. auf Englisch, wenn die Arbeit auf Englisch verfasst wurde
 
+- Bitte fragen Sie zusätzlich Ihren wissenschaftlichen Betreuer nach dessen individuell erarbeiteten Empfehlungen. Hier finden Sie ein [Beispiel für betreuerspezifische Hilfestellungen](https://github.com/michael-spengler/DHBW-Wissenschaftliche-Arbeiten).
+
 ## Literatur (Auszug)
 [1] M. Kornmeier. *Wissenschaftlich schreiben leicht gemacht: für Bachelor, Master und Dissertation*. 4. Auflage. UTB-Verlag (2011)
 
