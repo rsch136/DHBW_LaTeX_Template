@@ -154,7 +154,7 @@
 \use_refstyle 1
 \use_minted 0
 \branch Sperrvermerk
-\selected 1
+\selected 0
 \filename_suffix 0
 \color #faf0e6
 \end_branch
@@ -2083,7 +2083,7 @@ status open
 \begin_inset Graphics
 	filename img/lyx-starting.png
 	lyxscale 50
-	width 75col%
+	width 70col%
 
 \end_inset
 
@@ -2433,7 +2433,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename img/firmenlogo.jpg
-	width 80col%
+	height 25theight%
 
 \end_inset
 
