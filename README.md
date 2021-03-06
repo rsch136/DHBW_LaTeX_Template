@@ -25,6 +25,10 @@ Next, you need a LaTeX Editor. Any text editor (e.g. vi/vim, atom, sublime etc.)
 * [TexStudio](http://www.texstudio.org) (platform independent, recommended)
 * [TexShop](http://pages.uoregon.edu/koch/texshop/) (Mac only)
 
+Alternatively, you may choose the LyX graphical editor, which allows you to use all LaTeX features, but simplifies some tasks by its graphical user interface. This still needs a fully working LaTeX installation.
+
+* [LyX][https://www.lyx.org) (platform independent)
+
 ### Template Installation
 
 Clone/download the template or the complete GitHup repository to your local environment and unpack it to a directory of your choice. 
@@ -49,3 +53,5 @@ The acronyms list will then be generated automatically from this file upon compi
 The GitHub bundle contains sample chapter and appendix files which may be adapted or extended. Additional chapter and appendix files can be provided and included in the `master.tex` file.
 
 If you want to use a logo of your company replace the graphics file **`firmenlogo.jpg`** in folder `./img` by the logo of your company. Adjust the size of the logo by setting the scale factor of the image in **`titlepage.tex`**.
+
+For editing via the LyX graphical editor see the **`thesis.lyx``** template file. 
