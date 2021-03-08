@@ -4,11 +4,13 @@ This GitHub repository provides instructions, best practices, and a __template__
 
 ## General Notes
 * __The template is just a sample!__ Please adapt it to your requirements which you agree upon with your scientific advisor. E. g. adapt citation style, page margins, etc.
+* The LaTeX template and all related files can be found in the subdirectory LaTeX of the GitHub repository.
 * Always use the latest version of this template.
 * The template is written for a thesis in German, but can be adapted easily to other languages.
 * The template is written in pure LaTeX. It requires **basic knowledge of LaTeX**. Please get used to it *before* you start writing.
 * If you prefer to work with other type setting systems, you should nonetheless consider the document **`master.pdf`** as guideline for the general structure of your project or bachelor thesis.
 * The document ["Allgemeine Hinweise für das wissenschaftliche Arbeiten"](hinweise-wissenschaftliche-arbeiten.md) (in German) summarises some general tips, hints, best practices, etc. on how to write scientific theses and articles. It is by no means exhaustive, and the participation in the lectures on scientific working is required.
+* Moreover, if you are familiar with LyX, there is a LyX template which can be used instead of the LaTeX template. All elevant files for unsage of the LyX template can be found in the LyX directory of the GitHub Repository.
 
 ## Installation Instructions
 
