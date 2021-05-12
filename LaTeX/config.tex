@@ -1,63 +1,87 @@
 % !TEX root =  master.tex
-%      HYPERREF
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	ANLEITUNG: 
+% Passen Sie ggegebenenfalls alle Stellen im Dokument an, die mit 
+% 
+% @stud 
 %
-% Passen Sie alle Stellen im Dokument an, die mit 
-% @stud markiert sind
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% markiert sind.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{makeidx}         % allows index generation
-\usepackage{listings}	%Format Listings properly
-\usepackage{lipsum}    %Blindtext
-\usepackage{graphicx} % use various graphics formats
-\usepackage[german]{varioref} 	% nicer references \vref
-\usepackage{caption}	%better Captions
-\usepackage{booktabs} %nicer Tabs
+\usepackage{makeidx}                  % allows index generation
+\usepackage{listings}	                %Format Listings properly
+\usepackage{lipsum}                   % Blindtext
+\usepackage{graphicx}                 % use various graphics formats
+\usepackage[german]{varioref}         % nicer references \vref
+\usepackage{caption}	                % better Captions
+\usepackage{booktabs}                 % nicer Tabs
+\usepackage[hidelinks=true]{hyperref} % keine roten Markierungen bei Links
+\usepackage{fnpct}                    % Correct superscripts 
+\usepackage{calc}                     % Used for extra space below footsepline, in particular
 \usepackage{array}
 \usepackage{chngcntr}
-\usepackage[hidelinks=true]{hyperref} % keine roten Markierungen bei Links
-\usepackage{fnpct} % Correct superscripts 
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{calc} % Used for extra space below footsepline
 \usepackage{acronym}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \usepackage{setspace}
 
-%
-% @stud
-%
-%	FONT SELECTION: Entweder 1) Latin Modern oder 2) Times / Helvetica
-\usepackage{lmodern}             % 1) Latin modern font
-%\usepackage{mathptmx}           % 2) Helvetica / Times New Roman fonts (2 lines)
-%\usepackage[scaled=.92]{helvet} % 2) Helvetica / Times New Roman fonts (2 lines)
+%% Schriftarten- und Zeichenpakete
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 
+%%
+%% @stud
+%%
+%%	FONT SELECTION: Schriftarten und Schriftfamilie
+%%%%%%%%%%%%%
+%% SCHRIFTART
+%%%%%%%%%%%%%
+% 0) without decomment: normal font families 
+% ...
+% 1) Latin Modern 
+%\usepackage{lmodern}        
+% 2) Times 
+%\usepackage{mathptmx}         
+% 3) Helvetica
+%\usepackage[scaled=.92]{helvet} 
+%%%%%%%%%%%%%%%%%%
+%%	SCHRIFTFAMILIE
+%%%%%%%%%%%%%%%%%%
+% ohne Serifen
+\renewcommand*{\familydefault}{\sfdefault}
+\addtokomafont{disposition}{\sffamily}
 %
-% @stud
+% mit Serifen
+%\renewcommand*{\familydefault}{\rmdefault}
+%\addtokomafont{disposition}{\rmfamily}
 %
-%	LANGUAGE SETTINGS
+% Typewriter
+%\renewcommand*{\familydefault}{\ttdefault}
+%\addtokomafont{disposition}{\ttfamily}
+
+%%
+%% @stud
+%%
+%% LANGUAGE SETTINGS
 \usepackage[ngerman]{babel} 	        % german language
 \usepackage[german=quotes]{csquotes} 	% correct quoting using \enquote{}
 %\usepackage[english]{babel}          % english language
 %\usepackage{csquotes} 	              % correct quoting using \enquote{}
 
-%
-% @stud
-%
-% Uncomment the following lines to support hard URL breaks in bibliography 
+%%
+%% @stud
+%%
+%% Uncomment the following lines to support hard URL breaks in bibliography 
 %\apptocmd{\UrlBreaks}{\do\f\do\m}{}{}
 %\setcounter{biburllcpenalty}{9000}% Kleinbuchstaben
 %\setcounter{biburlucpenalty}{9000}% Großbuchstaben
 
-%
-% @stud
-%
-%	FOOTNOTES: Count footnotes over chapters
-%1 \counterwithout{footnote}{chapter}
+%%
+%% @stud
+%%
+%% FOOTNOTES: Count footnotes over chapters
+%\counterwithout{footnote}{chapter}
 
 %	ACRONYMS
 \makeatletter
@@ -77,14 +101,10 @@
 \renewcommand{\listalgorithmname}{Algorithmenverzeichnis }
 \floatname{algorithm}{Algorithmus}
 
-%		PAGE HEADER / FOOTER
-%	    Warning: There are some redefinitions throughout the master.tex-file!  DON'T CHANGE THESE REDEFINITIONS!
+%	PAGE HEADER / FOOTER
+%	Warning: There are some redefinitions throughout the master.tex-file!  DON'T CHANGE THESE REDEFINITIONS!
 \RequirePackage[automark]{scrlayer-scrpage}
 %alternatively with separation lines: \RequirePackage[automark,headsepline,footsepline]{scrlayer-scrpage}
-
-%\renewcommand*{\pnumfont}{\upshape\sffamily}
-%\renewcommand*{\headfont}{\upshape\sffamily}
-%\renewcommand*{\footfont}{\upshape\sffamily}
 
 \renewcommand{\chaptermarkformat}{}
 \RedeclareSectionCommand[beforeskip=0pt]{chapter}
@@ -113,8 +133,6 @@
 	\setlength{\bibparsep}{\parskip}		  % Add some space between biblatex entries in the bibliography
 	\addbibresource{bibliography.bib}	    % Add file bibliography.bib as biblatex resource
 	\DefineBibliographyStrings{ngerman}{andothers = {{et\,al\adddot}},}
-	\AdaptNoteOpt\footcite\multfootcite   % Will add  separators if footcite is called multiple consecutive times 
-	\AdaptNoteOpt\autocite\multautocite   % Will add  separators if autocite is called multiple consecutive times
 }
 
 \newcommand{\setTitlepage}{
@@ -123,9 +141,9 @@
 	\normalfont	
 }
 
-%
-% @stud
-%
+%%
+%% @stud
+%%
 \newcommand{\settingLists}{
 	%	Inhaltsverzeichnis
 	\tableofcontents
