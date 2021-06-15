@@ -18,7 +18,6 @@
 \usepackage{fnpct}                    % Correct superscripts 
 \usepackage{calc}                     % Used for extra space below footsepline, in particular
 \usepackage{array}
-\usepackage{chngcntr}
 \usepackage{acronym}
 \usepackage{algorithm}
 \usepackage{algpseudocode}
@@ -79,7 +78,7 @@
 %% @stud
 %%
 %% FOOTNOTES: Count footnotes over chapters
-%\counterwithout{footnote}{chapter}
+%% \counterwithout{footnote}{chapter}
 
 %	ACRONYMS
 \makeatletter
@@ -169,6 +168,8 @@
 
 \newcommand{\initializeAppendix}{
 	\appendix
-	\ihead{\appendixname~\thechapter}
+  \ihead{}
+  \chapter*{Anhang}
+  \addcontentsline{toc}{chapter}{Anhang}
 }
 

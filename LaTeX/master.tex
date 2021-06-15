@@ -141,14 +141,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	KURZFASSUNG
-%
-% @stud: abstract.tex bearbeiten
-%
-\input{abstract} 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % VERZEICHNISSE
 %
 % @stud: ggf. nicht benötigte Verzeichnisse auskommentieren/löschen in Def. von \settingLists in config.tex
@@ -168,6 +160,14 @@
 \onehalfspacing
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	KURZFASSUNG - Teil der Arbeit (arabische Zählung)
+%
+% @stud: abstract.tex bearbeiten
+%
+\input{abstract} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % KAPITEL
 %
 % @stud: einzelne Kapitel bearbeiten und eigene Kapitel hier einfügen
@@ -183,13 +183,13 @@
 \input{conclusion}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\initializeAppendix
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ANHÄNGE
 %
 % @stud: einzelne Anhänge bearbeiten und eigene Anhänge hier einfügen 
+%        die nachfolgenden Zeilen deaktivieren, wenn keine Anhänge verwendet werden
 %
+\initializeAppendix
 \input{appendix1}
 \input{appendix2}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
