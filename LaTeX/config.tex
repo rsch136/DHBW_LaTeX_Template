@@ -22,6 +22,7 @@
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 \usepackage{setspace}
+\usepackage{tocloft}
 
 %% Schriftarten- und Zeichenpakete
 \usepackage[T1]{fontenc}
@@ -87,6 +88,7 @@
 \makeatother
 
 %	LISTINGS
+% @stud: ggf. Namen/Text anpassen (englisch)
 \renewcommand{\lstlistingname}{Quelltext} 
 \renewcommand{\lstlistlistingname}{Quelltextverzeichnis}
 \lstset{numbers=left,
@@ -95,7 +97,8 @@
 	basicstyle=\ttfamily\small}
 
 %	ALGORITHMS
-\renewcommand{\listalgorithmname}{Algorithmenverzeichnis }
+% @stud: ggf. Namen/Text anpassen (englisch)
+\renewcommand{\listalgorithmname}{Algorithmenverzeichnis}
 \floatname{algorithm}{Algorithmus}
 
 %	PAGE HEADER / FOOTER
@@ -138,22 +141,6 @@
 	\normalfont	
 }
 
-%%
-%% @stud
-%%
-\newcommand{\settingLists}{
-	%	Inhaltsverzeichnis
-	\tableofcontents
-	%	Abbildungsverzeichnis
-	\listoffigures
-	%	Tabellenverzeichnis
-	\listoftables
-	%	Listingsverzeichnis / Quelltextverzeichnis
-	\lstlistoflistings
-	% Algorithmenverzeichnis
-	\listofalgorithms
-}
-
 \newcommand{\initializeText}{
 	\clearpage
 	\ihead{\chaptername~\thechapter} % Neue Header-Definition
@@ -169,7 +156,6 @@
 \newcommand{\initializeAppendix}{
 	\appendix
   \ihead{}
-  \chapter*{Anhang}
-  \addcontentsline{toc}{chapter}{Anhang}
+  \cftaddtitleline{toc}{chapter}{Anhang}{}
 }
 

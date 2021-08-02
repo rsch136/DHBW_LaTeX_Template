@@ -23,8 +23,10 @@
 %   Einstellungen --> Erzeugen --> Standard Bibliographieprogramm: biber
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[fontsize=12pt,BCOR=5mm,DIV=12,parskip=half,
-               listof=entryprefix,paper=a4,toc=bibliography,toc=listof,pointlessnumbers]{scrreprt}
+\documentclass[fontsize=12pt,BCOR=5mm,DIV=12,parskip=half,listof=totoc,
+               paper=a4,toc=bibliography,pointlessnumbers]{scrreprt}
+               
+               %toc=listof,listof=entryprefix,
                
 \makeindex
 
@@ -66,13 +68,13 @@
 %% Zitierstil
 %%%%%%%%%%%%%
 % NUMERIC Style - e. g. [12]
-\newcommand{\indextype}{numeric} 
+%\newcommand{\indextype}{numeric} 
 %
 % IEEE Style - numeric kind of style 
 %\newcommand{\indextype}{ieee} 
 %
 % ALPHABETIC Style - e. g. [AB12]
-%\newcommand{\indextype}{alphabetic} 
+\newcommand{\indextype}{alphabetic} 
 %
 % HARVARD Style 
 %\newcommand{\indextype}{apa} 
@@ -108,20 +110,13 @@
 
 \setTitlepage
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% KAPITEL UND ANHÄNGE
-%
-% @stud:
-%   - nicht benötigte: auskommentieren/löschen
-%   - neue: bei Bedarf hinzufügen mittels input-Kommando an entsprechender Stelle einfügen
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % EHRENWÖRTLICHE ERKLÄRUNG
 %
 % @stud: ewerkl.tex bearbeiten
 %
 \input{ewerkl} 
+\cleardoublepage  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -130,6 +125,7 @@
 % @stud: nondisclosurenotice.tex bearbeiten
 %
 \input{nondisclosurenotice} 
+\cleardoublepage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -137,35 +133,58 @@
 %
 % @stud: acknowledge.tex bearbeiten
 %
-\input{acknowledge} 
+\input{acknowledge}
+\cleardoublepage 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% VERZEICHNISSE
+% VERZEICHNISSE und ABSTRACT
 %
-% @stud: ggf. nicht benötigte Verzeichnisse auskommentieren/löschen in Def. von \settingLists in config.tex
+% @stud: ggf. nicht benötigte Verzeichnisse auskommentieren/löschen
 %
-\settingLists
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+\cleardoublepage
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ABKÜRZUNGSVERZEICHNIS
-%
+% Abbildungsverzeichnis
+\phantomsection
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+\cleardoublepage
+
+%	Tabellenverzeichnis
+\phantomsection
+\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables
+\cleardoublepage
+
+%	Listingsverzeichnis / Quelltextverzeichnis
+\lstlistoflistings
+\cleardoublepage
+
+% Algorithmenverzeichnis
+\listofalgorithms
+\cleardoublepage
+
+% Abkürzungsverzeichnis
 % @stud: acronyms.tex bearbeiten
-%
 \input{acronyms} 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+
+%	Kurzfassung / Abstract
+% @stud: abstract.tex bearbeiten
+\input{abstract} 
+\cleardoublepage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% KAPITEL UND ANHÄNGE
+%
+% @stud:
+%   - nicht benötigte: auskommentieren/löschen
+%   - neue: bei Bedarf hinzufügen mittels input-Kommando an entsprechender Stelle einfügen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \initializeText
 \onehalfspacing
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	KURZFASSUNG - Teil der Arbeit (arabische Zählung)
-%
-% @stud: abstract.tex bearbeiten
-%
-\input{abstract} 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % KAPITEL
@@ -198,12 +217,18 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LITERATURVERZEICHNIS
-% 
-% @stud: Literaturverzeichnis in Datei bibliography.bib anpassen 
+% @stud: Literaturverzeichnis in Datei bibliography.bib anpassen. 
+%
+% Alternative zu Verwendung von \initializeBibliography: Citavi ...
+% (dann \initializeBibliography auskommentieren und eigenes LaTex Coding verwenden)
 %
 \initializeBibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% INDEX
+% @stud: ggf. Index auskommentieren, wenn nicht benötigt
+%
 \addcontentsline{toc}{chapter}{Index}
 \printindex
 
