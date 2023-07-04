@@ -67,11 +67,41 @@
 %\usepackage[english]{babel}          % english language
 %\usepackage{csquotes} 	              % correct quoting using \enquote{}
 
+
+%%
+%% SVG
+%%
+\usepackage{svg}
+
+
+%%
+%% adjustbox for better image handling
+%%
+\usepackage[export]{adjustbox}
+
+
+%%
+%% Subfigures for multiple figures in one figure reference
+%%
+\usepackage{subcaption}
+\captionsetup[subfigure]{list=true,labelformat=brace, position=top}
+
+
+%%
+%% tabularx for tables
+%%
+\usepackage{tabularx}
+
+%%
+%% Bar chart drawing library 
+%%
+\usepackage{pgfplots} 
+
 %%
 %% @stud
 %%
 %% Uncomment the following lines to support hard URL breaks in bibliography 
-%\apptocmd{\UrlBreaks}{\do\f\do\m}{}{}
+\apptocmd{\UrlBreaks}{\do\f\do\m}{}{}
 %\setcounter{biburllcpenalty}{9000}% Kleinbuchstaben
 %\setcounter{biburlucpenalty}{9000}% Großbuchstaben
 
@@ -94,7 +124,9 @@
 \lstset{numbers=left,
 	numberstyle=\tiny,
 	captionpos=b,
-	basicstyle=\ttfamily\small}
+	basicstyle=\ttfamily\small,
+	upquote=true
+	}
 
 %	ALGORITHMS
 % @stud: ggf. Namen/Text anpassen (englisch)

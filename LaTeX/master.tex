@@ -38,7 +38,7 @@
 %%
 %% PERSÖNLICHE ANGABEN (BITTE VOLLSTÄNDIG EINGEBEN zwischen den Klammern: {...})
 %%
-\ArtDerArbeit{<Bachelor>/<Projekt>} % "Bachelor" oder "Projekt" wählen
+\ArtDerArbeit{<Seminararbeit>} % "Bachelorarbeit" oder "Projektarbeit" oder "Seminararbeit" wählen
 \TitelDerArbeit{<Titel Ihrer Arbeit>}
 \AutorDerArbeit{<Ihr Vor- und Nachname>}
 \Abteilung{<Ihre Abteilung>}
@@ -74,10 +74,10 @@
 %\newcommand{\indextype}{ieee} 
 %
 % ALPHABETIC Style - e. g. [AB12]
-\newcommand{\indextype}{alphabetic} 
+%\newcommand{\indextype}{alphabetic} 
 %
 % HARVARD Style 
-%\newcommand{\indextype}{apa} 
+\newcommand{\indextype}{apa} 
 %
 % CHICAGO Style 
 %\newcommand{\indextype}{authoryear}
@@ -124,8 +124,8 @@
 %
 % @stud: nondisclosurenotice.tex bearbeiten
 %
-\input{nondisclosurenotice} 
-\cleardoublepage
+%\input{nondisclosurenotice} 
+%\cleardoublepage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,8 +133,8 @@
 %
 % @stud: acknowledge.tex bearbeiten
 %
-\input{acknowledge}
-\cleardoublepage 
+%\input{acknowledge}
+%\cleardoublepage 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -142,6 +142,12 @@
 %
 % @stud: ggf. nicht benötigte Verzeichnisse auskommentieren/löschen
 %
+
+%	Kurzfassung / Abstract
+% @stud: abstract.tex bearbeiten
+\input{abstract} 
+\cleardoublepage
+
 \tableofcontents
 \cleardoublepage
 
@@ -158,22 +164,19 @@
 \cleardoublepage
 
 %	Listingsverzeichnis / Quelltextverzeichnis
-\lstlistoflistings
-\cleardoublepage
+%\lstlistoflistings
+%\cleardoublepage
 
 % Algorithmenverzeichnis
-\listofalgorithms
-\cleardoublepage
+%\listofalgorithms
+%\cleardoublepage
 
 % Abkürzungsverzeichnis
 % @stud: acronyms.tex bearbeiten
 \input{acronyms} 
 \cleardoublepage
 
-%	Kurzfassung / Abstract
-% @stud: abstract.tex bearbeiten
-\input{abstract} 
-\cleardoublepage
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % KAPITEL UND ANHÄNGE
@@ -229,7 +232,7 @@
 % INDEX
 % @stud: ggf. Index auskommentieren, wenn nicht benötigt
 %
-\addcontentsline{toc}{chapter}{Index}
-\printindex
+%\addcontentsline{toc}{chapter}{Index}
+%\printindex
 
 \end{document}
